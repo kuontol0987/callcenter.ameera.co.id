@@ -1,173 +1,40 @@
 
-<!DOCTYPE html>
-<html >
-
-<head>
-  <meta charset="UTF-8">
-  <link rel="shortcut icon" type="image/x-icon" href="https://production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
-  <link rel="mask-icon" type="" href="https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
-  <title>I'M HERE</title>
-  
-  
-  
-  
-      <style>
-      body {
-            margin: 0;
-            padding: 0;
-            font-family: monospace;
-            background: url('https://www.walldevil.com/wallpapers/w02/810234-anonymous-black-background-dark-v-for-vendetta.jpg') #000 no-repeat;
-            background-size: 100%;
-        }
-        #slogan {
-            text-align: center;
-            font-size: 36px;
-            margin-top: 20%;
-            color: #fff;
-        }
-        #slogan span { color: #cb0000}
-        #slogan span.selected {
-            background: #09f;
-            color: #fff;
-        }
-    </style>
-
-  
-  
-  
-  
-</head>
-
-<body oncontextmenu='return false;' onkeydown='return false;' onmousedown='return false;' ondragstart='return false' onselectstart='return false' style='-moz-user-select: none; cursor: default;'>
-
-  <div id="slogan" data-text="it's me . 14P3RSONAL"></div>
-  
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-
-    <script>
-    (function($){
-
-    $.fn.typer = function(options){
-
-        var defaults = $.extend({
-            search: '',
-            replace: [],
-            speed: 50,
-            delay: 2000
-        }, options);
-        
-        var bintext = function(length){
-            var text = '';
-            for(var $i = 0; $i<=length;$i++) {
-                text = text + Math.floor(Math.random() * 2)
-            }
-            return text;
-        };
-
-        this.each(function(){
-
-            var $this = $(this);
-            var $text = $this.data('text');
-            var position = 0;
-
-            var indexOf = $text.indexOf( defaults.search );
-            var normal = $text.substr(0, indexOf);
-            var changer = $text.substr(indexOf, $text.length);
-
-            defaults.replace.push(changer);
-
-            var interval = setInterval(function(){
-                var $bintext = '';
-
-                if( position == indexOf ) {
-
-                    $bintext = bintext(changer.length-1);
-
-                    $this.html( $text.substr(0, normal.length) );
-                    $this.append('<span>' + $bintext + '</span>')
-
-                } else if( position > indexOf ) {
-
-
-                    $bintext = bintext($text.length-1);
-
-                    $this.delay(defaults.speed).find('span').html(
-                        changer.substring(0, position - indexOf) +
-                        $bintext.substring(position, ($bintext.length))
-                    );
-
-                } else if( position < indexOf ) {
-
-                    $bintext = bintext($text.length-1);
-
-                    $this.delay(defaults.speed).html(
-                        normal.substring(0, position) +
-                        $bintext.substring(position, ($bintext.length))
-                    );
-
-                }
-
-                if( position < $text.length ) {
-                    position++;
-                } else {
-                    clearInterval(interval);
-
-                    var index = 0;
-                    setInterval(function(){
-
-                        var position = 0;
-                        var newText = defaults.replace[index];
-
-                        var changeInterval = setInterval(function(){
-
-                            var $bintext = '';
-                            for(var $i = 0; $i<=newText.length-1;$i++) {
-                                $bintext = $bintext + Math.floor(Math.random() * 2)
-                            }
-
-                            $this.delay(defaults.speed).find('span').html(
-                                newText.substring(0, position) +
-                                $bintext.substring(position, ($bintext.length))
-                            );
-
-                            if( position < $text.length ) {
-                                position++;
-                            } else {
-                                clearInterval(changeInterval);
-                            }
-
-                        }, defaults.speed);
-
-                        if( index < defaults.replace.length-1 ) {
-                            index++;
-                        } else {
-                            index = 0;
-                        }
-                    }, defaults.delay)
-
-
-                }
-            }, defaults.speed)
-
-        });
-
-    }
-
-
-
-})(jQuery)
-
-$(function(){
-  $('#slogan').typer({
-    search: '14P3RSONAL',
-    replace: ['14P3RSONAL', '14P3RSONAL', '14P3RSONAL','14P3RSONAL','14P3RSONAL','14P3RSONAL','14P3RSONAL','14P3RSONAL','14P3RSONAL','14P3RSONAL']
-  })
-})
-  </script>
-
-
-<iframe width="0" height="0" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1338272140&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-
-</body>
-</html>
- 
+<!----------------
+Mau Ngapain Gan...?
+"skil Cetek Gak Usah Belagu Gan :p"
+Jangan Recode/D0nT Recode
+-----------------!>
+<body bgcolor="gray">
+<!------------ Jangan Sok Edgy ------------!>
+<body bgcolor="gray">
+<!------------ Creation By : GadaLuBau || Attacker  ------------!>
+<body bgcolor="gray">
+<!------------ #Indonesian Pride  ------------!>
+<body bgcolor="gray">
+<!------------ media social:tiktok.com/@gada_lu_bau ------------!>
+<body bgcolor="gray">
+<!------------ Mirror: belom ada  ------------!>
+<body bgcolor="gray">
+<!------------ Mirror: belom ada ------------!>
+<body bgcolor="gray">
+<center><center<center><center><center><center><center>
+     <br>
+        <br>
+          <br>
+<title>Hacked By GadaLuBau </title> <center> <!---- >br< Spasi Kebawah Gan >br< ----> <meta property="og:description" content="======== STAMPED ========"> 
+          <br>
+        <br>
+     <br>
+<img src="https://cdn.discordapp.com/avatars/1017839487625220146/ba50c4ee71d18a1369acca83f7ad7d80.webp?size=1024" width="420px" height="400px" />
+<style>
+@import url('https://fonts.googleapis.com/css?family=Pirata+One'); body { font-family: courier new; background: #white; color: #28FE14; } .t3x { font-family: pirata one; -webkit-animation-name: blinker; -webkit-animation-duration: 0s; -webkit-animation-timing-function: linear; -webkit-animation-iteration-count: infinite; -moz-animation-name: blinker; -moz-animation-duration: 0s; -moz-animation-timing-function: linear; -moz-animation-iteration-count: infinite; animation-name: blinker; animation-duration: 0s; animation-timing-function: linear; animation-iteration-count: infinite; color: #385164; } @-moz-keyframes blinker { 0% { opacity: 1.0; } 50% { opacity: 0.0; } 100% { opacity: 1.0; } } @-webkit-keyframes blinker { 0% { opacity: 1.0; } 50% { opacity: 0.0; } 100% { opacity: 1.0; } } @keyframes blinker { 0% { opacity: 1.0; } 50% { opacity: 0.0; } 10% { opacity: 1.0; } } }</style> <center><h1 class="t3x"> <font color="grey" style="text-shadow: 0 0 20px black, 0 0 5px black, 0 0 7px black, 0 0 45px black; font-weight:bold: blue;font-size:60px">&#9760;GadaLuBau&#9760;
+<br> </font> <font color="red" style="text-shadow: 0 0 20px black, 0 0 5px black, 0 0 7px black, 0 0 45px black; font-weight:bold: blue;font-size:20px">Persetan Dengan Semua Larangan Dunia Maya !!!<br>Saya Hanya Ingin Bersenang-Senang...
+<br> </font> <font color="lightgray" style="text-shadow: 0 0 20px black, 0 0 5px black, 0 0 7px black, 0 0 45px black; font-weight:bold: blue;font-size:10px">
+<iframe width="0" height="0" allow="autoplay" src="https://a.top4top.io/m_2635dbfwz3.mp3" frameborder="0" allowfullscreen></iframe>
+<br><center>
+<div id="bar" style="position: fixed; width: 100%; bottom: 0px; font-family: courier new; height: 20px; color: white; font-size: 15px; left: 0px; border-top: 2px solid darkred; padding: 20px; background-color: #000"><b><marquee><i><font color="red"><b>Author : GadaLuBau</b></font></b></i></div><b><font color="red"><b><br></b>
+<!----------------
+Mau Ngapain Gan...?
+"skil Cetek Gak Usah Belagu Gan :p"
+Jangan Recode/D0nT Recode
+-----------------!>
